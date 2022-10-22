@@ -2,7 +2,7 @@ package ru.job4j.converter;
 
 public class Types {
     public static void main(String[] args) {
-        long l = 129;
+        long l = 228;
         byte b = (byte) l;
         System.out.println(b);
 
@@ -21,7 +21,7 @@ public class Types {
 
         short s = 1500;
         char j = (char) s;
-        double v = c;
-        System.out.println(v);
+        double q = j;
+        System.out.println(q);
     }
 }
