@@ -5,11 +5,9 @@ public class Game {
         if ("supper mario".equals(name)) {
             System.out.println("Start - super mario");
         }
-
         if ("tanks".equals(name)) {
             System.out.println("Start - tank");
         }
-
         if ("tetris".equals(name)) {
             System.out.println("Start - tetris");
         }
