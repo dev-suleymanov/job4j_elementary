@@ -1,6 +1,7 @@
 package ru.job4j.loop;
 
 import org.junit.jupiter.api.Test;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class CounterTest {
@@ -22,6 +23,7 @@ public class CounterTest {
         int expected = 11;
         assertThat(expected).isEqualTo(result);
     }
+
     @Test
     public void whenStart3Finish9Then42() {
         int start = 3;
