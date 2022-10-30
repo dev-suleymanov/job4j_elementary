@@ -22,13 +22,30 @@ public class CounterTest {
         int expected = 11;
         assertThat(expected).isEqualTo(result);
     }
-
     @Test
     public void whenStart3Finish9Then42() {
         int start = 3;
         int finish = 9;
         int result = Counter.sum(start, finish);
         int expected = 42;
+        assertThat(expected).isEqualTo(result);
+    }
+
+    @Test
+    public void whenStart2Finish6Even12() {
+        int start = 2;
+        int finish = 6;
+        int result = Counter.sumByEven(start, finish);
+        int expected = 12;
+        assertThat(expected).isEqualTo(result);
+    }
+
+    @Test
+    public void whenStart10Finish14Even36() {
+        int start = 10;
+        int finish = 14;
+        int result = Counter.sumByEven(start, finish);
+        int expected = 36;
         assertThat(expected).isEqualTo(result);
     }
 }
