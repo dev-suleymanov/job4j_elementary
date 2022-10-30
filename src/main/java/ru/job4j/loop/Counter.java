@@ -26,5 +26,6 @@ public class Counter {
         System.out.println(sum(135, 267));
         System.out.println(sumByEven(2, 6));
         System.out.println(sumByEven(10, 14));
+        System.out.println(sumByEven(12, 27));
     }
 }
