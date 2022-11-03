@@ -24,8 +24,8 @@ public class MinTest {
     @Test
     public void whenMiddleMin() {
         int[] array = new int[]{10, 2, 5};
-        int result = Min.findMin(array);
         int expected = 2;
+        int result = Min.findMin(array);
         assertThat(result).isEqualTo(expected);
     }
 }
