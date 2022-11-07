@@ -6,7 +6,11 @@ public class Slash {
             for (int j = 0; j < size; j++) {
                 boolean left = i == j;
                 boolean right = i + j == size - 1;
-                System.out.print(left || right ? "0" : " ");
+                if (left || right)  {
+                    System.out.print("0");
+                } else {
+                    System.out.print(" ");
+                }
             }
             System.out.println();
         }
