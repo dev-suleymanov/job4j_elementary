@@ -16,7 +16,6 @@ public class SimpleStringEncoder {
     }
 
     private static List<String> getDuplicates(String input) {
-        List<String> list = new ArrayList<>(Arrays.asList(input.split("(?<=(.))(?!\\1)")));
-        return list;
+        return new ArrayList<>(Arrays.asList(input.split("(?<=(.))(?!\\1)")));
     }
 }
