@@ -1,21 +1,19 @@
 package ru.job4j.array;
 
-import java.util.*;
-
 public class SimpleStringEncoder {
     public static String encode(String input) {
         String result = "";
-        List<String> list = getDuplicates(input);
-        for (String el : list) {
-            result += el.charAt(0);
-            if (el.length() != 1) {
-                result += "" + el.length();
+        char symbol = input.charAt(0);
+        int counter = 1;
+        for (int i = 1; i < input.length(); i++) {
+            if (symbol == input.charAt(i)) {
+                counter++;
+            } else {
+                result += symbol + (counter == 1 ? "" : "" + counter);
+                symbol = input.charAt(i);
+                counter = 1;
             }
         }
-        return result;
-    }
-
-    private static List<String> getDuplicates(String input) {
-        return new ArrayList<>(Arrays.asList(input.split("(?<=(.))(?!\\1)")));
+        return result + symbol + (counter == 1 ? "" : "" + counter);
     }
 }
